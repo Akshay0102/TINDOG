@@ -1,0 +1,169 @@
+body{
+    font-family: 'Montserrat';
+}
+#title{
+    background-color: #ff4c68;
+    
+}
+/* headings */
+h1{
+    font-family: 'Montserrat' ;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+h2{
+    font-family: 'montserrat';
+    font-size: 3.5rem;
+    color:white ;
+}  
+  
+h3{
+    font-size: 20px;
+}
+
+.container-fluid{
+    padding: 3% 15% 7%
+
+}
+
+.intro{
+    color: white;
+}
+
+/* navigation Bar */
+.navbar-brand{
+    font-family:'ubuntu';
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar{
+    padding-bottom: 4.5rem;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "ubuntu";
+}
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+
+/* title image */
+.title-img{
+    width: 25%;
+    transform: rotate(25deg);
+    position:absolute ;
+    right: 25%;
+   
+   
+}
+
+/* FEATURES */
+#features{
+    
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1;/* here z index 1 means this is on top and title image have not defined z index so it will be 0 ..1is greater then 0 so this will be on top*/
+
+}
+.feature-box{
+    text-align: center;
+    padding: 4.5%;
+    
+}
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+   color: #ff4c68;
+}
+
+p{
+    font-family: 'ubuntu';
+    font-size: 20px;
+    text-align: center;
+    color: #8f8f8f;
+}
+
+/* testimonials */
+#testimonials{
+    
+    background-color: #ef8172;
+    text-align: center;
+}
+.carousel-item{
+    padding: 7% 15%;
+    transition-delay: 0;
+}
+
+.testimonial-img{
+    width: 10%;
+    border-radius: 100%;
+    margin: 30px;
+}
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 4%;
+}
+.press-logo{
+    margin: 20px 20px 50px;
+    width: 15%;
+}
+
+/* pricing */
+#pricing{
+    
+    padding: 100px;
+}
+.price-intro{
+    color: black;
+}
+.price{
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* Call for Auction */
+#cta{
+    text-align: center;
+    
+    background-color: #ef8172;
+    /* padding: 10% 15%; */
+    padding: 10%;
+
+}
+.cta-text{
+    font-size: 3.5rem;
+    color: white;
+    padding-bottom: 50px;
+}
+
+
+/* footer */
+#footer{
+    text-align: center;
+    padding: 7%;
+
+}
+.ftr-icon{
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+/* making website responsive through media query */
+@media (max-width:992px){
+    .title-img{
+       position: static;
+       transform: rotate(0);
+       width: 60%;
+    }
+    #title{
+        text-align: center;
+    }
+}
